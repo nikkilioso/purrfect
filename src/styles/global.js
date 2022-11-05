@@ -9,7 +9,9 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h1 {
-    font-size: 48px;
+    font-size: 80px;
+    font-family: 'VT323', monospace;
+    text-align: center;
   }
 
   body {
