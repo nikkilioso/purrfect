@@ -1,3 +1,5 @@
+import { useState } from 'react';
+import { useEffect } from 'react';
 import styled from 'styled-components';
 import CatButton from './components/CatButton';
 import Frame from './components/Frame';
@@ -19,19 +21,36 @@ const Section = styled.section`
   }
 `
 function App() {
+  //array to show the cats from API
+  const [cats, setCats] = useState([]);
+
+  //function for Cat API
+  useEffect(() => {
+    fetch("https://api.thecatapi.com/v1/images/search?limit=2&mime_types=jpg")
+      .then((response) => response.json())
+      .then((data) => setCats(data))
+  }, [])
+
   return (
     <div className="App">
       <h1>The Purrfect Pussycat</h1>
-      <Grid>
-        <Frame>
-          <CatButton />
-          <h2>Whatever</h2>
-        </Frame>
-        <Frame>
-          <CatButton />
-          <h2>Whatever</h2>
-        </Frame>
-      </Grid>
+      {
+        cats.length !== 0 &&
+        <Grid>
+          <Frame>
+            <CatButton
+              catUrl={cats[0].url}
+            />
+            <h2>Whatever</h2>
+          </Frame>
+          <Frame>
+            <CatButton
+              catUrl={cats[1].url}
+            />
+            <h2>Whatever</h2>
+          </Frame>
+        </Grid>
+      }
       <Section>
         <Frame>
           <h2>I love Handydldlksdfie;aldj</h2>
