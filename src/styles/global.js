@@ -20,9 +20,9 @@ const GlobalStyle = createGlobalStyle`
     background-image: url("/background.svg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     height: 100vh;
     width: 100vw;
-    overflow: hidden;
   }
 `;
 

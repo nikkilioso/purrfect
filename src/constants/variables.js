@@ -1,5 +1,5 @@
 //this is an object
 export const colors = {
-  windowBorder: "#25F6E5",
+  windowBorder: "#5dfe29",
   button: "ED4854",
 }
