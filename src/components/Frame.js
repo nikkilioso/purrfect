@@ -6,6 +6,7 @@ const Div = styled.div`
   box-shadow: 0 0 0 2px black;
   background-color: ${colors.windowBorder};
 `
+
 const TopNav = styled.div`
   display: flex;
   justify-content: flex-end;
@@ -21,7 +22,6 @@ const Content = styled.div`
 
 const Img = styled.img`
   width: 40px;
-
 `
 
 function Frame({children}) {
