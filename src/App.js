@@ -11,7 +11,7 @@ const Grid = styled.section`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1.5rem;
-  max-width: 78em;
+  max-width: 75em;
   margin: 0 auto;
 `
 
@@ -34,6 +34,9 @@ function App() {
   //set initial cat names array
   const [catNames, setName] = useState([getName(), getName()]);
 
+  //set favorite cat name
+  const [favoriteCat, loveCat] = useState("no one");
+
   //magic function to make stuff update properly
   function newCat(data, i) {
     const tempImages = [...cats];
@@ -42,6 +45,12 @@ function App() {
     tempImages[i] = data;
     setName(tempNames);
     setCats(tempImages);
+
+    if(i === 0) {
+      loveCat(catNames[1]);
+    } else{
+      loveCat(catNames[0]);
+    }
   }
 
   //get a new cat image when button is clicked
@@ -50,7 +59,6 @@ function App() {
     .then((response) => response.json())
     .then((data) => newCat(data[0], i))
   }
-
 
   //function get cats
   useEffect(() => {
@@ -62,6 +70,7 @@ function App() {
   return (
     <div className="App">
       <h1>The Purrfect Pussycat</h1>
+      <p>Click to pick your favorite</p>
       {
         cats.length !== 0 &&
         <Grid>
@@ -83,7 +92,7 @@ function App() {
       }
       <Section>
         <Frame>
-          <h2>I love Meow Meow Meow.</h2>
+          <h2>You love {favoriteCat}.</h2>
         </Frame>
       </Section>
       <GlobalStyle />
