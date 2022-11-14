@@ -38,6 +38,7 @@ const GlobalStyle = createGlobalStyle`
     height: 100vh;
     width: 100vw;
     overflow-x: hidden;
+    scrollbar-color: rebeccapurple green;
   }
 `;
 

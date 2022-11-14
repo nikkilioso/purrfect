@@ -9,9 +9,9 @@ const Button = styled.button`
   background-size: cover;
 `
 
-function CatButton({catUrl}) {
+function CatButton({catUrl, onClick}) {
   return(
-    <Button catUrl={catUrl}/>
+    <Button catUrl={catUrl} onClick={onClick}/>
   )
 }
 
