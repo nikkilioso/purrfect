@@ -9,7 +9,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h1 {
-    font-size: 85px;
+    font-size: 82px;
     text-transform: uppercase;
     font-family: 'VT323', monospace;
     text-align: center;
@@ -17,11 +17,11 @@ const GlobalStyle = createGlobalStyle`
     text-shadow: 2px 4px #FE49A4, 4px 6px #5dfe29;
     margin-top: 2px;
     margin-bottom: 0;
-    line-height: 1;
   }
 
   h2 {
-    font-size: 40px;
+    font-size: 30px;
+    text-transform: uppercase;
     font-family: 'Share Tech Mono', monospace;
     text-align: center;
     margin-top: .5rem;
@@ -29,14 +29,15 @@ const GlobalStyle = createGlobalStyle`
     }
 
   p {
-    font-size: 36px;
+    font-size: 40px;
+    color: black;
     text-transform: uppercase;
     font-family: 'Share Tech Mono', monospace;
     font-weight: 800;
     text-align: center;
     margin-top: 0;
-    margin-bottom: 0;
-    text-shadow: 0 0 10px cyan;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px yellow;
   }
 
   body {
