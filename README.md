@@ -9,10 +9,10 @@ At this point the user must choose between a new cat and their old favorite. Thi
 2. My project is uploaded to my GitHub repository and has at least 5 separate commits.
 3. My project includes a README file.
 4. My project has the following features:
-   a. developed using React,
-   b. retrieves data from a third-party API (https://thecatapi.com/) and uses it to display random images in my app,
-   c. uses an array to generate, retrieve, and diplay information (randomized cat names) in my app, and
-   d. determines selection and displays useful information about it (name of chosen cat).
+   1. developed using React,
+   2. retrieves data from a third-party API (https://thecatapi.com/) and uses it to display random images in my app,
+   3. uses an array to generate, retrieve, and diplay information (randomized cat names) in my app, and
+   4. determines selection and displays useful information about it (name of chosen cat).
 
 ### Fonts in Use:
 The fonts in use are:
