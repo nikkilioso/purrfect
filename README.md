@@ -11,13 +11,12 @@ At this point the user must choose between a new cat and their old favorite. Thi
 4. My project has the following features:
    1. developed using React,
    2. retrieves data from a third-party API (https://thecatapi.com/) and uses it to display random images in my app,
-   3. uses an array to generate, retrieve, and diplay information (randomized cat names) in my app, and
+   3. uses an array to generate, retrieve, and display information (randomized cat names) in my app, and
    4. determines selection and displays useful information about it (name of chosen cat).
 
 ### Fonts in Use:
-The fonts in use are:
-1. H1 is VT323
-2. H2 and P are Share Tech Mono
+1. H1 is 'VT323'
+2. H2 & P are 'Share Tech Mono'
 
 ### Attribution:
 1. https://thecatapi.com/
