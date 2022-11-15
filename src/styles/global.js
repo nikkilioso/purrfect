@@ -21,7 +21,6 @@ const GlobalStyle = createGlobalStyle`
 
   h2 {
     font-size: 30px;
-    text-transform: uppercase;
     font-family: 'Share Tech Mono', monospace;
     text-align: center;
     margin-top: .5rem;
@@ -37,8 +36,8 @@ const GlobalStyle = createGlobalStyle`
     text-align: center;
     margin-top: 0;
     margin-bottom: 1rem;
-    text-shadow: 2px 2px yellow;
-  }
+    text-shadow: 1px 2px cyan, 2px 3px #5dfe29;
+    }
 
   body {
     margin: 0;
@@ -53,4 +52,33 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
+/* RESPONSIVE?
+Large:
+@media only screen and (min-width: ) {
+
+}
+
+Meduim:
+@media only screen and (min-width: ) {
+
+  } 
+
+
+Small:
+  h1 {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: 'VT323', monospace;
+    text-align: center;
+    color: black;
+    text-shadow: 2px 4px #FE49A4, 4px 6px #5dfe29;
+    margin-top: 2px;
+    margin-bottom: 0;
+  }
+    
+  }*/
+
 export default GlobalStyle;
+
+
+
