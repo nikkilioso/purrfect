@@ -326,7 +326,10 @@ export const lastName = [
   "Bitey-Biterson",
   "Sandwich",
   "The Boss",
-
+  "Fatty-Pants",
+  "Fatty-Fat-Fat-Fat",
+  "McPuffin",
+  "McMuffins",
 
 
 ]
