@@ -1,0 +1,26 @@
+/* Large */
+@media only screen and (min-width: ) {
+
+  }
+
+/* Medium */
+  @media only screen and (min-width: ) {
+
+    } 
+
+
+    /* Small */
+    h1 {
+      font-size: 24px;
+      text-transform: uppercase;
+      font-family: 'VT323', monospace;
+      text-align: center;
+      color: black;
+      text-shadow: 2px 4px #FE49A4, 4px 6px #5dfe29;
+      margin-top: 2px;
+      margin-bottom: 0;
+    }
+    
+    frame {
+      
+    }
