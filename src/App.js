@@ -7,12 +7,22 @@ import GlobalStyle from './styles/global';
 import { getName } from './utils/helper';
 
 
+
+const Main = styled.main`
+  padding: 0 1rem 1rem;
+`
+
 const Grid = styled.section`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1.5rem;
   max-width: 75em;
   margin: 0 auto;
+  @media only screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+  } 
+    
+
 `
 
 const Section = styled.section`
@@ -68,7 +78,7 @@ function App() {
   }, [])
 
   return (
-    <div className="App">
+    <Main>
       <h1>The Purrfect Pussycat</h1>
       <p>Click to pick your favorite</p>
       {
@@ -96,7 +106,7 @@ function App() {
         </Frame>
       </Section>
       <GlobalStyle />
-    </div>
+    </Main>
   );
 }
 

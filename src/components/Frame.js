@@ -5,6 +5,10 @@ const Div = styled.div`
   border: 5px solid ${colors.windowBorder};
   box-shadow: 0 0 0 2px black;
   background-color: ${colors.windowBorder};
+
+  @media only screen and (max-width: 768px) {
+    width: 100% !important;
+  } 
 `
 
 const TopNav = styled.div`
