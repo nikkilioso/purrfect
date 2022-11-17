@@ -7,6 +7,11 @@ const Button = styled.button`
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  cursor: pointer;
+
+  @media only screen and (max-width: 480px) {
+    padding-top: 50%;
+  }
 `
 
 function CatButton({catUrl, onClick}) {

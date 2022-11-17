@@ -19,9 +19,12 @@ const GlobalStyle = createGlobalStyle`
     margin-bottom: 0;
     @media only screen and (max-width: 768px) {
       font-size: 36px;
-      background-color: rgba(0,255,245,0.65);
+      background-color: rgba(0,255,235,0.75);
       text-shadow: 1px 2px #FE49A4, 2px 3px #5dfe29;
-  }
+      margin-left: -1rem;
+      margin-right: -1rem;
+      margin-top: 0;
+    }
   }
 
   h2 {
@@ -30,7 +33,9 @@ const GlobalStyle = createGlobalStyle`
     text-align: center;
     margin-top: .5rem;
     margin-bottom: .5rem;
-    
+    @media only screen and (max-width: 480px) {
+      font-size: 20px;
+    }
   } 
 
   p {
@@ -46,8 +51,10 @@ const GlobalStyle = createGlobalStyle`
     @media only screen and (max-width: 768px) {
       font-size: 20px;
       text-shadow: .5px 1px cyan, 1px 1.5px #5dfe29;
-  }
-
+      background-color: rgba(0,255,235,0.75);
+      margin-left: -1rem;
+      margin-right: -1rem;
+    }
   }
 
   body {

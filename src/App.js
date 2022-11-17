@@ -6,8 +6,6 @@ import Frame from './components/Frame';
 import GlobalStyle from './styles/global';
 import { getName } from './utils/helper';
 
-
-
 const Main = styled.main`
   padding: 0 1rem 1rem;
 `
@@ -18,11 +16,11 @@ const Grid = styled.section`
   grid-gap: 1.5rem;
   max-width: 75em;
   margin: 0 auto;
-  @media only screen and (max-width: 768px) {
-    grid-template-columns: 1fr;
-  } 
-    
 
+  @media only screen and (max-width: 480px) {
+    grid-template-columns: 1fr;
+    grid-gap: .5rem;
+  }
 `
 
 const Section = styled.section`
@@ -34,6 +32,10 @@ const Section = styled.section`
     > div:last-of-type {
       padding: 0 2rem;
     }
+  }
+
+  @media only screen and (max-width: 480px) {
+    margin-top: .5rem;
   }
 `
 
@@ -47,15 +49,18 @@ function App() {
   //set favorite cat name
   const [favoriteCat, loveCat] = useState("no one");
 
-  //magic function to make stuff update properly
+  //function to set new cat
   function newCat(data, i) {
+    //create temporary arrays
     const tempImages = [...cats];
     const tempNames = [...catNames];  
+    //set new values
     tempNames[i] = getName();
     tempImages[i] = data;
+    //set new cat name and image
     setName(tempNames);
     setCats(tempImages);
-
+    //adjust favorite cat based on selection
     if(i === 0) {
       loveCat(catNames[1]);
     } else{
@@ -70,7 +75,7 @@ function App() {
     .then((data) => newCat(data[0], i))
   }
 
-  //function get cats
+  //function to get initial cats
   useEffect(() => {
     fetch("https://api.thecatapi.com/v1/images/search?limit=2&mime_types=jpg")
       .then((response) => response.json())

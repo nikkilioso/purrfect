@@ -26,6 +26,10 @@ const Content = styled.div`
 
 const Img = styled.img`
   width: 40px;
+
+  @media only screen and (max-width: 480px) {
+    width: 20px;
+  }
 `
 
 function Frame({children}) {
