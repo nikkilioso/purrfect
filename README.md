@@ -4,6 +4,14 @@ In this app, the user is presented with two cat images on their screen. They mus
 
 At this point the user must choose between a new cat and their old favorite. This process is un-ending, as the user may never be satisfied with their final choice.
 
+### How to Run:
+1. Clone the repository 
+2. Open command line tool
+3. Navigate to the project folder
+4. Run `npm install`
+5. Run `npm start`
+6. Project will run automatically in browser at `localhost:3000`
+
 ### Requirements:
 1. My application has responsive design for mobile and desktop use.
 2. My project is uploaded to my GitHub repository and has at least 5 separate commits.
